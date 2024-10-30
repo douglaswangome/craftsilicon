@@ -3,9 +3,9 @@ tailwind.config = {
 		extend: {
 			colors: {
 				container: "#fafafa",
-				primary: "#f4e721",
-				secondary: "#152efa",
-				tertiary: "#000000",
+				primary: "#e6da40",
+				secondary: "#14b0e3",
+				tertiary: "#e3144b",
 			},
 		},
 	},

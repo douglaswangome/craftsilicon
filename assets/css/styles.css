@@ -9,11 +9,11 @@
 }
 
 :root {
-	--page-background: #121212;
-	--text-color: #fff;
-	--primary-color: #f4e721;
-	--secondary-color: #152efa;
-	--tertiary-color: #000000;
+	--page-background: #fafafa;
+	--text-color: #000;
+	--primary-color: #e6da40;
+	--secondary-color: #14b0e3;
+	--tertiary-color: #e3144b;
 }
 
 body {
@@ -24,6 +24,15 @@ body {
 	background-color: var(--page-background);
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+a:hover,
+a:active {
+	color: var(--primary-color);
+}
+
 .thumbnail,
 .ticket {
 	transition: transform 0.5s ease-in-out;
@@ -31,7 +40,6 @@ body {
 .thumbnail:hover,
 .ticket:hover {
 	transform: scale(0.93);
-	transition: transform 0.5s;
 }
 
 .calendar-btn {
@@ -39,5 +47,12 @@ body {
 }
 .calendar-btn:active {
 	transform: scale(0.93);
-	transition: transform 0.5s;
+}
+
+.scale-div {
+	transition: transform 0.5s ease-in-out;
+}
+.scale-div:hover,
+.scale-div:active {
+	transform: scale(0.9);
 }

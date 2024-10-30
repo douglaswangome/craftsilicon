@@ -13,13 +13,60 @@
 		<title>Muranga Seals | Home</title>
 	</head>
 	<body>
+		<!-- Header -->
+		<div
+			class="relative header flex flex-col p-2 gap-2 shadow-lg mb-4 bg-[#e1e1e1]"
+		>
+			<img
+				src="./assets/images/logo.png"
+				alt="logo"
+				class="absolute left-0 top-1/2 transform -translate-y-1/2 w-20 object-contain"
+			/>
+			<div class="flex w-full justify-end gap-2">
+				<div class="flex items-center gap-1">
+					<div
+						class="bg-primary text-white h-8 w-8 flex justify-center items-center rounded-full"
+					>
+						<i class="fa-regular fa-user"></i>
+					</div>
+					<span>Sign In</span>
+				</div>
+				<div class="flex items-center gap-1">
+					<div
+						class="bg-primary text-white h-8 w-8 flex justify-center items-center rounded-full"
+					>
+						<i class="fa-regular fa-user"></i>
+					</div>
+					<span>Sign Up</span>
+				</div>
+			</div>
+			<div
+				class="flex flex-col md:flex-row items-center justify-between uppercase ml-[86px] border-t"
+			>
+				<div class="flex flex-wrap gap-2">
+					<a href="#">news</a>
+					<a href="#">fixtures</a>
+					<a href="#">team</a>
+					<a href="#">statistics</a>
+					<a href="#">our club</a>
+				</div>
+				<div class="flex items-center gap-2 text-primary">
+					<div>
+						<i class="fa-solid fa-shirt"></i>
+						<span>Shop</span>
+					</div>
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</div>
+			</div>
+		</div>
+		<!-- Hero section + Thumbnails -->
 		<div class="flex flex-col bg-gradient-to-b from-tertiary to-primary pb-8">
 			<!-- Hero Section -->
 			<div class="hero relative">
 				<img
 					src="./assets/images/hero.jpg"
 					alt="hero"
-					class="w-full h-full object-cover"
+					class="w-full h-[450px] object-cover"
 					loading="lazy"
 				/>
 				<div
@@ -47,7 +94,7 @@
 			>
 				<!-- Thumbnail 1 -->
 				<div
-					class="thumbnail w-[300px] flex flex-col gap-1 items-center bg-tertiary text-white h-full"
+					class="thumbnail w-[300px] flex flex-col gap-1 items-center bg-container h-full"
 				>
 					<img
 						src="./assets/images/thumbnail1.jpg"
@@ -67,7 +114,7 @@
 				</div>
 				<!-- Thumbnail 2 -->
 				<div
-					class="thumbnail w-[300px] flex flex-col gap-1 items-center bg-tertiary text-white h-full"
+					class="thumbnail w-[300px] flex flex-col gap-1 items-center bg-container h-full"
 				>
 					<img
 						src="./assets/images/hero.jpg"
@@ -93,7 +140,7 @@
 				</div>
 				<!-- Thumbnail 3 -->
 				<div
-					class="thumbnail w-[300px] flex flex-col gap-1 items-center bg-tertiary text-white h-full"
+					class="thumbnail w-[300px] flex flex-col gap-1 items-center bg-container h-full"
 				>
 					<img
 						src="./assets/images/thumbnail2.jpg"
@@ -123,17 +170,13 @@
 		</div>
 		<!-- Next Match Section -->
 		<div
-			class="flex flex-col p-3 bg-container w-[97%] mx-auto -mt-4 md:-mt-8 rounded-lg"
+			class="flex flex-col p-3 bg-container w-[97%] mx-auto -mt-4 md:-mt-8 rounded-lg border shadow-lg"
 		>
 			<div
 				class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 items-center justify-between p-2"
 			>
 				<div class="w-full flex items-center justify-center">
-					<span
-						class="text-2xl bg-gradient-to-l from-tertiary to-primary inline-block text-transparent bg-clip-text"
-					>
-						Murang'a First Team
-					</span>
+					<span class="text-2xl"> Murang'a First Team </span>
 					<div class="grid grid-cols-1"></div>
 				</div>
 				<!-- Timer -->
@@ -170,12 +213,12 @@
 				<div
 					class="w-full flex items-center justify-center sm:col-span-2 lg:col-auto"
 				>
-					<div class="flex items-center gap-2 text-blue-400">
-						<div class="flex gap-1 items-center">
+					<div class="flex items-center gap-2">
+						<div class="flex gap-1 items-center text-secondary">
 							<i class="fa-regular fa-calendar-plus"></i>
 							<span class="italic">Sync Schedules to Calendar</span>
 						</div>
-						<div class="flex gap-2 items-center text-tertiary">
+						<div class="flex gap-2 items-center">
 							<div
 								class="calendar-btn h-10 w-10 rounded-full flex items-center justify-center border-2 border-gray-500 font-xl"
 							>
@@ -193,13 +236,10 @@
 		</div>
 		<!-- Seals Tickets Section -->
 		<div
-			class="flex flex-col items-center gap-3 p-3 bg-container w-[97%] mx-auto mt-4 rounded-lg"
+			class="flex flex-col items-center gap-3 p-3 bg-container w-[97%] mx-auto mt-4 rounded-lg border shadow-lg"
 		>
 			<div class="w-full flex items-center justify-center">
-				<span
-					class="text-2xl bg-gradient-to-l from-tertiary to-primary inline-block text-transparent bg-clip-text"
-					>Murang'a Seals Tickets
-				</span>
+				<span class="text-2xl text-tertiary">Murang'a Seals Tickets </span>
 			</div>
 			<div
 				id="tickets"
@@ -208,20 +248,17 @@
 		</div>
 		<!-- Seals Stores -->
 		<div
-			class="flex flex-col items-center gap-3 p-3 bg-container w-[97%] mx-auto mt-4 rounded-lg"
+			class="flex flex-col items-center gap-3 p-3 bg-container w-[97%] mx-auto mt-4 rounded-lg border shadow-lg"
 		>
 			<div
 				class="w-full flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-3"
 			>
-				<span
-					class="text-2xl bg-gradient-to-r from-tertiary to-primary inline-block text-transparent bg-clip-text"
-					>Murang'a Seals Stores
-				</span>
+				<span class="text-2xl text-secondary">Murang'a Seals Stores </span>
 
 				<button
-					class="text-primary border border-primary p-2 uppercase rounded-lg hover:text-white hover:bg-primary"
+					class="text-secondary border border-secondary p-2 uppercase rounded-lg hover:text-white hover:bg-secondary cursor-pointer"
 				>
-					<span>official store murang'a seal</span>
+					<span>official store murang'a seals</span>
 				</button>
 			</div>
 			<div
@@ -231,20 +268,133 @@
 		</div>
 		<!-- Seals News Section -->
 		<div
-			class="flex flex-col items-center gap-3 p-3 bg-container w-[97%] mx-auto mt-4 rounded-lg"
+			class="flex flex-col items-center gap-3 p-3 bg-container w-[97%] mx-auto mt-4 rounded-lg border shadow-lg"
 		>
 			<div class="w-full flex items-center justify-center">
-				<span
-					class="text-2xl bg-gradient-to-r from-tertiary to-primary inline-block text-transparent bg-clip-text"
-					>Murang'a Seals News
-				</span>
+				<span class="text-2xl text-primary">Murang'a Seals News </span>
 			</div>
 			<div
 				id="news"
-				class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2"
+				class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2"
 			></div>
 		</div>
-
+		<!-- Players Section -->
+		<div
+			class="flex flex-col items-center gap-3 p-3 w-[97%] mx-auto mt-4 rounded-lg border shadow-lg"
+		>
+			<div class="relative flex items-center justify-between w-full">
+				<div class="mx-auto">
+					<span class="text-2xl text-secondary">Players </span>
+				</div>
+				<div class="absolute right-0 flex gap-2 items-center">
+					<div
+						class="calendar-btn h-8 w-8 rounded-full flex items-center justify-center border-2 border-gray-500 font-xl opacity-50"
+					>
+						<i class="fa-solid fa-angle-left"></i>
+					</div>
+					<div
+						class="calendar-btn h-8 w-8 rounded-full flex items-center justify-center border-2 border-gray-500"
+					>
+						<i class="fa-solid fa-angle-right"></i>
+					</div>
+				</div>
+			</div>
+			<div
+				id="players"
+				class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2"
+			></div>
+			<div
+				id="players-carousel"
+				class="flex items-center justify-center gap-1 w-fit"
+			></div>
+		</div>
+		<!-- Partners Section -->
+		<div
+			class="flex flex-col items-center gap-3 p-3 bg-container w-[97%] mx-auto mt-4 rounded-lg border shadow-lg"
+		>
+			<div class="relative w-full flex items-center justify-center">
+				<div class="mx-auto">
+					<span class="text-2xl">Main Partners </span>
+				</div>
+				<div class="absolute right-0 border-b border-black p-1 pb-0 text-sm">
+					<span>View All</span>
+					<i class="fa-solid fa-angle-right"></i>
+				</div>
+			</div>
+			<div id="partners" class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+				<div class="w-full h-full">
+					<img
+						src="./assets/images/nike.png"
+						alt="partner"
+						class="w-full h-full object-cover mix-blend-multiply"
+						loading="lazy"
+					/>
+				</div>
+				<div class="w-full h-full">
+					<img
+						src="./assets/images/spotify.png"
+						alt="partner"
+						class="w-full h-full object-cover mix-blend-multiply"
+						loading="lazy"
+					/>
+				</div>
+				<div class="w-full h-full">
+					<img
+						src="./assets/images/ambilight.png"
+						alt="partner"
+						class="w-full h-full object-contain mix-blend-multiply"
+						loading="lazy"
+					/>
+				</div>
+			</div>
+		</div>
+		<!-- Footer -->
+		<div class="footer flex flex-col gap-3 mt-8 p-4 w-full bg-secondary">
+			<div class="flex flex-wrap justify-between w-full">
+				<span class="uppercase">murangaseals@gmail.com</span>
+				<span>+254790770982</span>
+			</div>
+			<div
+				class="flex flex-col sm:flex-row items-center justify-center p-2 gap-2"
+			>
+				<span class="font-bold">Register Now So You Don't Miss Our Games</span>
+				<div class="flex gap-1 p-2 rounded-lg border border-primary sm:w-full">
+					<input
+						type="email"
+						placeholder="Enter your email"
+						class="w-full p-2 rounded-lg"
+					/>
+					<button class="py-2 bg-primary text-white rounded-lg w-full">
+						Subscribe Now
+					</button>
+				</div>
+			</div>
+			<div class="flex flex-wrap justify-between py-2 border-b border-black">
+				<div class="flex gap-2 items-center">
+					<a href="#">Home</a>
+					<a href="#">About</a>
+					<a href="#">Events</a>
+					<a href="#">Blogs</a>
+				</div>
+				<div class="flex gap-2 items-center text-xl">
+					<i class="fa-brands fa-facebook"></i>
+					<i class="fa-brands fa-youtube"></i>
+					<i class="fa-brands fa-x-twitter"></i>
+					<i class="fa-brands fa-whatsapp"></i>
+				</div>
+			</div>
+			<div class="flex flex-wrap justify-between">
+				<div>
+					<span>&copy; Murang'a Seals.</span>
+					<span>All rights reserved.</span>
+				</div>
+				<div class="flex gap-1">
+					<span>Terms & Conditions</span>
+					<span>|</span>
+					<span>Privacy Policy</span>
+				</div>
+			</div>
+		</div>
 		<script src="./assets/js/index.js"></script>
 	</body>
 </html>

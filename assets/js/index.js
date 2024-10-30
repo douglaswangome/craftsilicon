@@ -97,27 +97,17 @@ storesData.forEach((store, i) => {
 	);
 
 	const storeTitle = document.createElement("span");
-	storeTitle.classList.add(
-		"store-title",
-		"text-lg",
-		"mb-2",
-		"text-tertiary",
-		"uppercase"
-	);
+	storeTitle.classList.add("store-title", "text-lg", "mb-2", "uppercase");
 	storeTitle.textContent = store.title;
 
 	const storeDescription = document.createElement("span");
-	storeDescription.classList.add(
-		"store-description",
-		"text-tertiary",
-		"text-sm"
-	);
+	storeDescription.classList.add("store-description", "text-sm");
 	storeDescription.textContent = store.description;
 
 	const storeButton = document.createElement("button");
 	storeButton.classList.add(
 		"store-button",
-		"text-tertiary",
+		"text-secondary",
 		"uppercase",
 		"italic"
 	);
@@ -141,6 +131,7 @@ storesData.forEach((store, i) => {
 });
 
 // News Section
+// TODO: Include dummy description for each news item
 const news = document.getElementById("news");
 const newsTags = ["CLUB", "NATIONAL", "INTERNATIONAL", "WORLD", "BASKETBALL"];
 
@@ -179,7 +170,7 @@ Array.from({ length: 8 }).forEach((_, i) => {
 	);
 
 	const newsTitle = document.createElement("span");
-	newsTitle.classList.add("news-title", "text-lg", "mb-2", "text-tertiary");
+	newsTitle.classList.add("news-title", "text-lg", "mb-2");
 	newsTitle.textContent = "Spain men in basketball and football actions";
 
 	const newsFooter = document.createElement("div");
@@ -210,7 +201,7 @@ Array.from({ length: 8 }).forEach((_, i) => {
 	newsTagText.textContent = newsTags[randomTag];
 
 	const newsTime = document.createElement("div");
-	newsTime.classList.add("flex", "items-center", "text-tertiary", "gap-2");
+	newsTime.classList.add("flex", "items-center", "gap-2");
 
 	const newsTimeIcon = document.createElement("i");
 	newsTimeIcon.classList.add("fa-regular", "fa-clock");
@@ -234,4 +225,39 @@ Array.from({ length: 8 }).forEach((_, i) => {
 	newsContent.appendChild(newsFooter);
 
 	news.appendChild(newsItem);
+});
+
+// Players Section
+const players = document.getElementById("players");
+
+Array.from({ length: 4 }).forEach((_, i) => {
+	const player = document.createElement("div");
+	player.classList.add("player", "w-full", "min-h-[300px]");
+
+	const playerImg = document.createElement("img");
+	playerImg.classList.add("w-full", "h-full", "object-cover");
+	playerImg.src = "assets/images/player.png";
+	playerImg.alt = "Player";
+
+	player.appendChild(playerImg);
+	players.appendChild(player);
+});
+
+// Players' Carousel Section
+const playersCarousel = document.getElementById("players-carousel");
+
+Array.from({ length: 4 }).forEach((_, i) => {
+	const indicator = document.createElement("div");
+	indicator.classList.add(
+		"scale-div",
+		"indicator",
+		"w-4",
+		"h-1",
+		"bg-primary",
+		"rounded-lg",
+		"cursor-pointer"
+	);
+	indicator.setAttribute("data-index", i);
+
+	playersCarousel.appendChild(indicator);
 });
