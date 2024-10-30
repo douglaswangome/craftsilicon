@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--page-background: #121212;
+	--text-color: #fff;
+	--primary-color: #f4e721;
+	--secondary-color: #152efa;
+	--tertiary-color: #000000;
+}
+
+body {
+	font-family: "Nunito", sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	color: var(--text-color);
+	background-color: var(--page-background);
+}
+
+.thumbnail,
+.ticket {
+	transition: transform 0.5s ease-in-out;
+}
+.thumbnail:hover,
+.ticket:hover {
+	transform: scale(0.93);
+	transition: transform 0.5s;
+}
+
+.calendar-btn {
+	transition: transform 0.5s ease-in-out;
+}
+.calendar-btn:active {
+	transform: scale(0.93);
+	transition: transform 0.5s;
+}
