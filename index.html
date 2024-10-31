@@ -34,7 +34,7 @@
 	<body>
 		<!-- Header -->
 		<div
-			class="relative header flex flex-col p-2 gap-2 shadow-lg mb-4 bg-[#e1e1e1]"
+			class="relative header flex flex-col p-2 gap-2 shadow-lg mb-4 bg-secondary text-white"
 		>
 			<img
 				src="./assets/images/logo.png"
@@ -252,6 +252,77 @@
 					</div>
 				</div>
 			</div>
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+				<div
+					class="w-full h-full flex items-center justify-center p-4 bg-gradient-to-tr from-primary via-black via-primary via-black via-primary via-black via-primary to-black md:col-span-2 lg:col-span-1"
+				>
+					<span class="text-2xl text-white font-bold">View all Results</span>
+				</div>
+				<div class="w-full h-full xl:col-span-2 border">
+					<div class="flex items-center gap-2 bg-black text-white p-2">
+						<span class="text-2xl">24</span>
+						<div class="flex flex-col leading-none">
+							<span>Wednesday</span>
+							<span>July</span>
+						</div>
+					</div>
+					<div class="flex items-center p-2">
+						<img src="./assets/images/team1.png" alt="club" class="w-10 h-10" />
+						<div class="flex-1 flex flex-col items-center justify-center">
+							<span class="text-sm">Kickoff CEST</span>
+							<span class="text-3xl font-bold">01:00</span>
+						</div>
+						<img src="./assets/images/team2.png" alt="club" class="w-10 h-10" />
+					</div>
+					<div class="flex flex-col items-center justify-center">
+						<span class="text-xl">
+							FC. Barcelona <small>vs</small> Man City
+						</span>
+						<span>Camping World Stadium</span>
+					</div>
+					<div class="flex flex-col items-center justify-center p-2">
+						<button
+							class="bg-primary text-white p-2 flex items-center justify-center gap-1 rounded-lg"
+						>
+							<i class="fa-solid fa-ticket"></i>
+							<div class="border-l border-dashed h-full w-[1px]"></div>
+							<span>Tickets</span>
+						</button>
+					</div>
+				</div>
+				<div class="w-full h-full flex flex-col border">
+					<div class="flex items-center gap-2 bg-black text-white p-2">
+						<span class="text-2xl">04</span>
+						<div class="flex flex-col items-center leading-none">
+							<span>Sunday</span>
+							<span>August</span>
+						</div>
+					</div>
+					<div class="flex items-center p-2">
+						<img src="./assets/images/team1.png" alt="club" class="w-10 h-10" />
+						<div class="flex-1 flex flex-col items-center justify-center">
+							<span class="text-sm">Kickoff CEST</span>
+							<span class="text-3xl font-bold">01:00</span>
+						</div>
+						<img src="./assets/images/team3.png" alt="club" class="w-10 h-10" />
+					</div>
+					<div class="flex flex-col items-center justify-center">
+						<span class="text-xl">
+							FC. Barcelona <small>vs</small> Real Madrid
+						</span>
+						<span>NextLife Arena</span>
+					</div>
+					<div class="flex flex-col items-center justify-center p-2">
+						<button
+							class="bg-primary text-white p-2 flex items-center justify-center gap-1 rounded-lg"
+						>
+							<i class="fa-solid fa-ticket"></i>
+							<div class="border-l border-dashed h-full w-[1px]"></div>
+							<span>Tickets</span>
+						</button>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- Seals Tickets Section -->
 		<div
@@ -320,7 +391,7 @@
 			</div>
 			<div
 				id="players"
-				class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2"
+				class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2"
 			></div>
 			<div
 				id="players-carousel"
